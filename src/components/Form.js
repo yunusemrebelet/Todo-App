@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 const Form = ({ inputText, setInputText, todos, setTodos, SetTodoType }) => {
 
     const inputTextHandler = (e) => {
-        console.log(e.target.value);
+
         setInputText(e.target.value);
     };
 
@@ -15,7 +15,6 @@ const Form = ({ inputText, setInputText, todos, setTodos, SetTodoType }) => {
     };
 
     const filterHandler = (e) => {
-        console.log(e.target.value);
         SetTodoType(e.target.value);
     };
 
